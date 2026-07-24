@@ -1,0 +1,8 @@
+Lab/Lab 02/__pycache__/Lab2.cpython-314.pyc
+Lab/Lab 04/__pycache__/Lab4.cpython-314.pyc
+Lab/Lab 04/__pycache__/map_population.cpython-314.pyc
+archive/
+venv/
+.venv/
+__pycache__/
+*.pyc

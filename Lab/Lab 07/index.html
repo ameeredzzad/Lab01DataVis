@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Walmart Sales Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Walmart Sales Performance Dashboard</h1>
+<h2>Ameer Edzzad Shah 22005680 - Lab 7</h2>
+
+
+<div class="filters">
+
+
+<label>
+Select Store:
+<select id="storeFilter">
+
+<option value="All">
+All Stores
+</option>
+
+</select>
+</label>
+
+
+
+<label>
+Holiday Status:
+
+<select id="holidayFilter">
+
+<option value="All">
+All Weeks
+</option>
+
+<option value="1">
+Holiday Week
+</option>
+
+<option value="0">
+Non-Holiday Week
+</option>
+
+</select>
+
+</label>
+
+
+
+
+<label>
+Select Year:
+
+<select id="yearFilter">
+
+<option value="All">
+All Years
+</option>
+
+</select>
+
+</label>
+
+
+
+
+<label>
+Minimum Sales:
+
+<input 
+type="number"
+id="minSales"
+placeholder="Minimum Sales"
+>
+
+
+</label>
+
+
+
+
+<label>
+Maximum Sales:
+
+<input 
+type="number"
+id="maxSales"
+placeholder="Maximum Sales"
+>
+
+
+</label>
+
+
+
+<button id="applyFilter">
+Apply Filter
+</button>
+
+
+</div>
+
+
+
+<div class="dashboard">
+
+
+<div class="chart">
+
+<h2>Weekly Sales Trend</h2>
+
+<svg id="lineChart"
+width="800"
+height="400">
+</svg>
+
+</div>
+
+
+
+<div class="chart">
+
+<h2>Total Sales by Store</h2>
+
+<svg id="barChart"
+width="700"
+height="400">
+</svg>
+
+</div>
+
+
+
+
+<div class="chart">
+
+<h2>Holiday vs Non-Holiday Sales</h2>
+
+<svg id="donutChart"
+width="500"
+height="400">
+</svg>
+
+</div>
+
+
+
+<div class="chart">
+
+<h2>Fuel Price vs Weekly Sales</h2>
+
+<svg id="scatterPlot"
+width="700"
+height="400">
+</svg>
+
+</div>
+
+
+
+</div>
+
+
+
+<div id="tooltip"></div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

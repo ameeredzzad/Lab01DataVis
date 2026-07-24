@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+World Important Events Timeline
+</title>
+
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script src="https://d3js.org/d3-scale-chromatic.v3.min.js"></script>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+
+<h1>
+World Important Events Timeline Explorer
+</h1>
+
+<h2>
+Ameer Edzzad Shah 22005680 - Lab 8 
+</h2>
+
+
+
+<!-- SUMMARY DASHBOARD -->
+
+<div class="summary">
+
+
+<div class="card">
+<h3>Total Events</h3>
+<p id="totalEvents">0</p>
+</div>
+
+
+<div class="card">
+<h3>Earliest Year</h3>
+<p id="earliest">-</p>
+</div>
+
+
+<div class="card">
+<h3>Latest Year</h3>
+<p id="latest">-</p>
+</div>
+
+
+<div class="card">
+<h3>Countries</h3>
+<p id="countries">-</p>
+</div>
+
+
+<div class="card">
+<h3>Event Types</h3>
+<p id="eventTypes">-</p>
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- FILTER -->
+
+<div class="filters">
+
+
+<input 
+type="text"
+id="search"
+placeholder="Search incident name..."
+>
+
+
+
+<select id="countryFilter">
+
+<option value="All">
+All Countries
+</option>
+
+</select>
+
+
+
+
+
+<select id="typeFilter">
+
+<option value="All">
+All Event Types
+</option>
+
+</select>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- TIMELINE -->
+
+
+<div class="container">
+
+
+<svg 
+id="timeline"
+viewBox="0 0 1200 400">
+
+</svg>
+
+
+</div>
+
+
+
+
+
+<!-- LEGEND -->
+
+<div id="legend"></div>
+
+
+
+
+
+
+<div id="tooltip"></div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
